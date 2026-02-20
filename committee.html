@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committees | Intelvision College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sub-header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index1.html"><img src="images/logo.jpg" alt="College Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="Admission_page.html">ADMISSION</a></li>
+                    <li><a href="news.html">NEWS & EVENTS</a></li>
+                    <li><a href="course.html">STUDENT</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="committee.html">COMMITTEES</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Committees</h1>
+    </section>
+
+    <!-- Committees Section -->
+    <section class="about-us">
+        <div class="about-col">
+            <h1>Our College Committees</h1>
+            <p>
+                At Intelvision College, we believe in holistic development through leadership, creativity, and social responsibility. Our committees provide students with opportunities to engage in various extracurricular activities and community initiatives.
+            </p>
+        </div>
+        <div class="row">
+            <!-- Sports Committee -->
+            <div class="course-col">
+                <h3>Sports Committee</h3>
+                <p>
+                    Headed by Prof. Anil Kumar, this committee encourages sportsmanship, organizes inter-college tournaments, and promotes a fit lifestyle among students.
+                </p>
+                <a href="gymkhana.html" class="hero-btn red-btn">Explore</a>
+            </div>
+
+            <!-- NSS Committee -->
+            <div class="course-col">
+                <h3>NSS (National Service Scheme)</h3>
+                <p>
+                    Led by Dr. Sunita Sharma, the NSS Committee conducts blood donation drives, tree plantations, and social welfare programs to instill a sense of community service in students.
+                </p>
+                <a href="nss.html" class="hero-btn red-btn">Explore</a>
+            </div>
+
+            <!-- Cultural Committee -->
+            <div class="course-col">
+                <h3>Cultural Committee</h3>
+                <p>
+                    Under the guidance of Prof. Rajesh Verma, this committee organizes annual fests, traditional day events, and talent showcases to celebrate India's rich culture.
+                </p>
+                <a href="cultural.html" class="hero-btn red-btn">Explore</a>
+            </div>
+
+            <!-- Student Council -->
+            <div class="course-col">
+                <h3>Student Council</h3>
+                <p>
+                    Chaired by Dr. Priya Nair, the Student Council acts as the bridge between students and administration, addressing academic and non-academic concerns.
+                </p>
+                <a href="student-council.html" class="hero-btn red-btn">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h2>About Intelvision College</h2>
+        <p>We are committed to providing quality education and a nurturing environment for our students.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with ❤️ by Intelvision College</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

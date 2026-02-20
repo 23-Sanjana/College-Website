@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymkhana Committee</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <style>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.committee-header {
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/sports.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid #27ae60;
+}
+
+.committee-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.committee-header p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ddd;
+}
+
+/* Section Styling */
+.committee-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #444;
+    border-bottom: 3px solid #27ae60;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Committee Head */
+.committee-head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.committee-head img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px solid #27ae60;
+}
+
+.committee-head h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #333;
+}
+
+.committee-head p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Committee Members */
+.committee-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.member {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: #eef9f2;
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 3px solid #27ae60;
+}
+
+.member h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #007a34;
+}
+
+.member p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Committee Works */
+.committee-works ul {
+    padding-left: 20px;
+    list-style: square;
+    color: #333;
+}
+
+.committee-works ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Prizes Section */
+.committee-prizes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.prize-card {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    background: #eaf7e8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #27ae60;
+}
+
+.prize-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: #d6f2dc;
+}
+
+.prize-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #007a34;
+    font-weight: 600;
+}
+
+.prize-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #27ae60;
+    color: #fff;
+    margin-top: 40px;
+    border-top: 5px solid #f4f4f9;
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f9f9f9;
+}
+
+    </style>
+</head>
+<body>
+    <section class="committee-header">
+        <div class="overlay">
+            <h1>Gymkhana Committee</h1>
+            <p>Fostering fitness, sportsmanship, and teamwork among students.</p>
+        </div>
+    </section>
+    
+
+    <section class="committee-section">
+        <div class="committee-head">
+            <h2 class="section-title">Committee Head</h2>
+            <img src="images/sport head.webp" alt="Committee Head">
+            <h3>Dr. Rajesh Sharma</h3>
+            <p>Dr. Sharma is an accomplished leader with a passion for sports and student development. He has overseen numerous successful sports events and is committed to fostering a culture of fitness and teamwork.</p>
+        </div>
+
+        <div class="committee-members">
+            <h2 class="section-title">Committee Members</h2>
+            <div class="member">
+                <img src="images/come3.jpg" alt="Member 1">
+                <h3>Anjali Mehta</h3>
+                <p>Sports Coordinator</p>
+            </div>
+            <div class="member">
+                <img src="images/come1.jpg" alt="Member 2">
+                <h3>Rohit Verma</h3>
+                <p>Fitness Program Manager</p>
+            </div>
+            <div class="member">
+                <img src="images/come2.jpg" alt="Member 3">
+                <h3>Simran Kaur</h3>
+                <p>Event Organizer</p>
+            </div>
+        </div>
+
+        <div class="committee-works">
+            <h2 class="section-title">Our Works</h2>
+            <ul>
+                <li>Organized inter-collegiate sports meet with participation from over 20 colleges.</li>
+                <li>Conducted fitness workshops for students and staff.</li>
+                <li>Launched a state-of-the-art gym facility with trainers.</li>
+                <li>Hosted annual sports day to promote sportsmanship and teamwork.</li>
+            </ul>
+        </div>
+
+        <div class="committee-prizes">
+            <h2 class="section-title">Achievements and Prizes</h2>
+            <div class="prize-card">
+                <h3>Gold Medal</h3>
+                <p>Won in the Inter-College Basketball Championship 2023.</p>
+            </div>
+            <div class="prize-card">
+                <h3>First Place</h3>
+                <p>Bagged the first prize in the National Athletics Meet 2022.</p>
+            </div>
+            <div class="prize-card">
+                <h3>Best Organizer Award</h3>
+                <p>Received at the University Sports Fest 2023.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Made with ❤️ by Your College Team</p>
+    </footer>
+</body>
+</html>

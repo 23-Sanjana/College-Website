@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department List | Intelvision College</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sub-header {
+            height: 50vh;
+            background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/banner.png);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .sub-header h1 {
+            font-size: 3rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+        }
+
+        nav img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f44336;
+        }
+
+        .department-section {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .department-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .department-section p {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 50px;
+        }
+
+        .department-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .department-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .department-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .department-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .department-card h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .department-card p {
+            color: #777;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            padding: 0 15px;
+        }
+
+        .department-card a {
+            display: inline-block;
+            margin: 10px 0 20px;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .department-card a:hover {
+            background-color: #c92b25;
+        }
+
+        @media (max-width: 768px) {
+            .department-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sub-header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index1.html"><img src="images/logo.jpg" alt="College Logo"></a>
+            <ul>
+                <li><a href="index1.html">HOME</a></li>
+                <li><a href="Admission_page.html">ADMISSION</a></li>
+                <li><a href="news.html">NEWS & EVENTS</a></li>
+                <li><a href="student.html">STUDENT</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+                <li><a href="committee.html">COMMITTEE</a></li>
+                <li><a href="#">ALUMNI</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+        <h1>Departments</h1>
+    </section>
+
+    <!-- Department Section -->
+    <section class="department-section">
+        <h1>Our Departments</h1>
+        <p>Explore the diverse range of departments at Intelvision College, led by esteemed faculty members.</p>
+        <div class="department-list">
+            <!-- Computer Science -->
+            <div class="department-card">
+                <img src="images/cs.jpg" alt="Computer Science">
+                <h3>Computer Science</h3>
+                <p>Led by Dr. Rajesh Verma, specializing in AI & Machine Learning.</p>
+                <a href="#">Explore</a>
+            </div>
+            <!-- Mathematics -->
+            <div class="department-card">
+                <img src="images/maths.jpg" alt="Mathematics">
+                <h3>Mathematics</h3>
+                <p>Headed by Dr. Priya Nair, expert in Applied Mathematics.</p>
+                <a href="#">Explore</a>
+            </div>
+            <!-- Physics -->
+            <div class="department-card">
+                <img src="images/physics.jpg" alt="Physics">
+                <h3>Physics</h3>
+                <p>Guided by Dr. Amit Sharma, specializing in Quantum Mechanics.</p>
+                <a href="#">Explore</a>
+            </div>
+            <!-- Chemistry -->
+            <div class="department-card">
+                <img src="images/chemistry.png" alt="Chemistry">
+                <h3>Chemistry</h3>
+                <p>Led by Dr. Ritu Singh, expert in Organic Chemistry.</p>
+                <a href="#">Explore</a>
+            </div>
+            <!-- Mechanical Engineering -->
+            <div class="department-card">
+                <img src="images/mechanical.jpg" alt="Mechanical Engineering">
+                <h3>Mechanical Engineering</h3>
+                <p>Headed by Dr. Anil Kumar, specializing in Robotics & Automation.</p>
+                <a href="#">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h2>About Intelvision College</h2>
+        <p>We are committed to academic excellence, providing students with world-class education and research opportunities.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Intelvision College Team</p>
+    </section>
+</body>
+</html>

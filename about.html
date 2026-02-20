@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>College Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?
+        family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+        <style>
+            /* Dropdown styling */
+            nav ul li {
+                position: relative;
+            }
+
+            nav ul li .dropdown {
+                display: none;
+                position: absolute;
+                background-color: #ffffff;
+                min-width: 200px;
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            nav ul li .dropdown a {
+                color: #333;
+                padding: 10px 15px;
+                text-decoration: none;
+                display: block;
+            }
+
+            nav ul li .dropdown a:hover {
+                background-color: #f4f4f4;
+            }
+
+            nav ul li:hover .dropdown {
+                display: block;
+            }
+        </style>
+    </head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index1.html"><img src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="Admission_page.html">ADMISSION</a></li>
+                    <li><a href="news.html">NEWS & EVENTS</a></li>
+                    <li><a href="course.html">STUDENT</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="committee.html">COMMITTEE</a></li>
+                    <li><a href="alumni.html">ALUMNI</a></li>
+                    <li>
+                        <a href="about.html">ABOUT US</a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown">
+                            <li><a href="history.html">College History</a></li>
+                            <li><a href="leadership.html">Leadership</a></li>
+                            <li><a href="campus.html">Campus and Facilities</a></li>
+                            <li><a href="accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About Us</h1>
+    </section>
+
+    <!--------------About us content------------>
+    <section class="about-us">
+        <div class="about-col">
+            <h1>Discover Tomorrow at Intelvision College</h1>
+            <p>At Intelvision College, we're more than just an educational institution. We're a vibrant community committed to unlocking each student's potential through quality education and innovative learning experiences.<br>
+                 Our comprehensive curriculum is designed to empower students with the skills and knowledge necessary to thrive in today's dynamic world.<br>
+                  Join us at Intelvision College to embark on a journey of intellectual growth and personal development, surrounded by passionate educators and a supportive environment. Discover the difference at Intelvision College—where every student matters, and every learning experience counts.</p>
+        </div>
+        <div class="anout-col">
+            <img src="images/about.jpg">
+        </div>
+    </section>
+
+    <!-------------Footer------->
+    <section class="footer">
+        <h2>About Us</h2>
+        <p>We're committed to providing a supportive and inclusive environment where students can thrive. Join our community and be part of a journey toward a brighter future.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>&copy; 2025 Intelvision College. All rights reserved. Designed with ❤️ by College Team.</p>
+    </section>
+
+    <!----------JavaScript for Toggle Menu---------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

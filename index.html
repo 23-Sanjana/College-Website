@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Intelvision College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt="Intelvision College Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Admission_page.html">ADMISSION</a></li>
+                    <li><a href="news.html">NEWS & EVENTS</a></li>
+                    <li><a href="course.html">STUDENT</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="committee.html">COMMITTEE</a></li>
+                    <li><a href="alumni.html">ALUMNI</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Intelvision College</h1>
+            <p>Intelvision College is dedicated to fostering academic excellence and personal growth. <br>
+                Our state-of-the-art campus provides a dynamic learning environment for students to thrive and achieve their goals.</p>
+            <a href="about.html" class="hero-btn">Learn More</a>
+        </div>
+    </section>
+
+    <!------- Courses Section ---------->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Explore a variety of programs tailored to help students succeed in their careers.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Undergraduate Programs</h3>
+                <p>Our undergraduate programs provide a solid foundation in various disciplines, from science and technology to business and humanities.</p>
+            </div>
+            <div class="course-col">
+                <h3>Postgraduate Programs</h3>
+                <p>Take your education further with our master's and Ph.D. programs designed to enhance your expertise and career prospects.</p>
+            </div>
+            <div class="course-col">
+                <h3>Professional Courses</h3>
+                <p>We offer certification courses and short-term programs to equip students with industry-relevant skills and knowledge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!------- Campus Locations ---------->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Intelvision College has campuses in multiple locations worldwide.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.jpg" alt="London Campus">
+                <div class="layer">
+                    <h3>London</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.jpg" alt="New York Campus">
+                <div class="layer">
+                    <h3>New York</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.jpg" alt="Washington Campus">
+                <div class="layer">
+                    <h3>Washington</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------- Facilities Section ---------->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We offer world-class facilities to enhance your learning experience.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.jpg" alt="Library">
+                <h3>Modern Library</h3>
+                <p>Our library is equipped with thousands of books, research materials, and digital resources.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.jpg" alt="Sports Facilities">
+                <h3>Sports Complex</h3>
+                <p>We provide top-notch sports facilities to encourage a healthy and active lifestyle.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.jpg" alt="Cafeteria">
+                <h3>Spacious Cafeteria</h3>
+                <p>Our cafeteria offers a variety of nutritious meals and beverages to keep you energized.</p>
+            </div>
+        </div>
+    </section>
+
+    <!------- Testimonials Section ---------->
+    <section class="testimonials">
+        <h1>What Our Students Say</h1>
+        <p>Our students share their experiences at Intelvision College.</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user1.jpg" alt="Student Testimonial">
+                <div>
+                    <p>"Intelvision College has provided me with an excellent education and countless opportunities for growth."</p>
+                    <h3>Sarah Patel</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user2.jpg" alt="Student Testimonial">
+                <div>
+                    <p>"The faculty and facilities here are top-notch, making it an ideal place for learning."</p>
+                    <h3>Yash Rai</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------- Call to Action ---------->
+    <section class="cta">
+        <h1>Enroll Today & Take the First Step Towards Your Future</h1>
+        <a href="contact.html" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!------- Footer ---------->
+    <section class="footer">
+        <h2>About Intelvision College</h2>
+        <p>We are committed to providing quality education and a nurturing environment for our students.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with ❤️ by Intelvision College</p>
+    </section>
+
+    <!------- JavaScript for Toggle Menu ---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() { navLinks.style.right = "0"; }
+        function hideMenu() { navLinks.style.right = "-200px"; }
+    </script>
+
+</body>
+</html>

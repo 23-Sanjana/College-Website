@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+h1, h2 {
+    color: #004aad;
+}
+
+/* Sub-header Section */
+.sub-header {
+    background: url(images/banner.jpg) no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.sub-header h1 {
+    font-size: 2.5rem;
+}
+
+/* Dropdown Styling */
+nav ul li {
+    position: relative;
+}
+
+nav ul li .dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+nav ul li .dropdown a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li .dropdown a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Content Section */
+.content-section {
+    padding: 20px 40px;
+}
+
+.content-section h2 {
+    border-bottom: 2px solid #004aad;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Faculty Grid */
+.faculty-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.faculty-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(50% - 10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-card h3 {
+    color: #004aad;
+}
+
+.faculty-card p {
+    margin: 5px 0;
+}
+
+/* Department List */
+.department-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.department-list li {
+    background: #004aad;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #004aad;
+    color: white;
+}
+
+.footer .icons i {
+    margin: 0 10px;
+    color: white;
+}

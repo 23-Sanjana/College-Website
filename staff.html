@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Page | Intelvision College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        /* Dropdown Styling */
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        nav ul li .dropdown a {
+            color: #333;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li .dropdown a:hover {
+            background-color: #f4f4f4;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index1.html"><img src="images/logo.jpg" alt="College Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="Admission_page.html">ADMISSION</a></li>
+                    <li><a href="news.html">NEWS & EVENTS</a></li>
+                    <li><a href="course.html">STUDENT</a></li>
+                    <li>
+                        <a href="staff.html">STAFF</a>
+                        <!-- Dropdown menu -->
+                    </li>
+                    <li><a href="committee.html">COMMITTEE</a></li>
+                    <li><a href="alumni.html">ALUMNI</a></li>
+                    <li>
+                        <a href="about.html">ABOUT US</a>
+                        <ul class="dropdown">
+                            <li><a href="history.html">College History</a></li>
+                            <li><a href="leadership.html">Leadership</a></li>
+                            <li><a href="campus.html">Campus and Facilities</a></li>
+                            <li><a href="accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Meet Our Esteemed Faculty</h1>
+    </section>
+
+    <!--------------Staff Content------------>
+    <section class="about-us">
+        <div class="about-col">
+            <h1>Our Dedicated Faculty</h1>
+            <p>Meet our distinguished faculty members who are experts in their respective fields and committed to providing the best education to students.</p>
+            <a href="faculty.html" class="hero-btn red-btn">Faculty Profiles</a>
+        </div>
+        <div class="about-col">
+            <h1>Academic Departments</h1>
+            <p>Our departments offer a wide range of academic programs, fostering knowledge, research, and innovation.</p>
+            <a href="department-list.html" class="hero-btn red-btn">View Departments</a>
+        </div>
+    </section>
+
+    <!-------------- Faculty Section ------------>
+    <section class="faculty">
+        <h1>Our Professors</h1>
+        <p>We are proud to have a team of highly qualified and experienced faculty members.</p>
+        <div class="row">
+            <div class="faculty-col">
+                <img src="images/faculty1.jpg" alt="Professor Amit Sharma">
+                <h3>Dr. Amit Sharma</h3>
+                <p>Head of Computer Science Department <br> Ph.D. in Artificial Intelligence, IIT Bombay</p>
+            </div>
+            <div class="faculty-col">
+                <img src="images/faculty2.jpg" alt="Professor Priya Nair">
+                <h3>Prof. Priya Nair</h3>
+                <p>Associate Professor, Business Management <br> MBA, IIM Bangalore</p>
+            </div>
+            <div class="faculty-col">
+                <img src="images/faculty3.jpg" alt="Professor Rajesh Verma">
+                <h3>Dr. Rajesh Verma</h3>
+                <p>Professor of Mechanical Engineering <br> Ph.D. in Robotics, IISc Bangalore</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------------- Contact Us Section ------------>
+    <section class="cta">
+        <h1>Want to Know More About Our Faculty?</h1>
+        <a href="contact.html" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!-------------Footer Section------------->
+    <section class="footer">
+        <h2>About Intelvision College</h2>
+        <p>Intelvision College is one of India's leading institutions, offering top-quality education across multiple disciplines.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Intelvision College Team</p>
+    </section>
+
+    <!----------JavaScript for Toggle Menu------------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

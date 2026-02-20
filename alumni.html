@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alumni - College Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <style>
+            /* Custom Alumni Page CSS */
+            .alumni-section {
+                padding: 50px;
+                background-color: #f8f8f8;
+            }
+
+            .alumni-section h1 {
+                text-align: center;
+                font-size: 2.5rem;
+                color: #333;
+            }
+
+            .profile-card {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+
+            .profile-card .card {
+                background: white;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+                width: 250px;
+                margin: 0 20px;
+                transition: 0.3s ease;
+            }
+
+            .profile-card .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .card img {
+                width: 100%;
+                border-radius: 50%;
+                height: 180px;
+                object-fit: cover;
+            }
+
+            .card h3 {
+                margin-top: 15px;
+                font-size: 1.2rem;
+                color: #444;
+            }
+
+            .card p {
+                font-size: 1rem;
+                color: #777;
+                margin-top: 10px;
+            }
+
+            .card a {
+                display: inline-block;
+                margin-top: 15px;
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .card a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index1.html"><img src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="Admission_page.html">ADMISSION</a></li>
+                    <li><a href="news.html">NEWS & EVENTS</a></li>
+                    <li><a href="course.html">STUDENT</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="committee.html">COMMITTEE</a></li>
+                    <li><a href="alumni.html">ALUMNI</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Alumni</h1>
+    </section>
+
+    <!---------------Alumni Section------------->
+    <section class="testimonials">
+        <h1>What Our Students Say</h1>
+        <p>Our students share their experiences at Intelvision College.</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user1.jpg" alt="Student Testimonial">
+                <div>
+                    <p>"Intelvision College has provided me with an excellent education and countless opportunities for growth."</p>
+                    <h3>Sarah Patel</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user2.jpg" alt="Student Testimonial">
+                <div>
+                    <p>"The faculty and facilities here are top-notch, making it an ideal place for learning."</p>
+                    <h3>Yash Rai</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------Footer Section------------->
+    <section class="footer">
+        <h2>About Intelvision College</h2>
+        <p>We are committed to providing quality education and a nurturing environment for our students.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with ❤️ by Intelvision College</p>
+    </section>
+
+    <!----------Javascript for Toggle Menu---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

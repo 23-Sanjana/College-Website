@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Profile | Intelvision College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .sub-header {
+            height: 50vh;
+            background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/banner.png);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .sub-header h1 {
+            font-size: 3rem;
+        }
+
+        .faculty-section {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .faculty-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .faculty-section p {
+            color: #777;
+            font-size: 1rem;
+            margin-bottom: 50px;
+        }
+
+        .faculty-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .faculty-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .faculty-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .faculty-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .faculty-card h3 {
+            margin: 15px 0 5px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .faculty-card p {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .faculty-card a {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .faculty-card a:hover {
+            background-color: #c92b25;
+        }
+
+        @media (max-width: 768px) {
+            .faculty-card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sub-header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index1.html"><img src="images/logo.jpg" alt="College Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index1.html">HOME</a></li>
+                    <li><a href="Admission_page.html">ADMISSION</a></li>
+                    <li><a href="news.html">NEWS & EVENTS</a></li>
+                    <li><a href="#">STUDENT</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="committee.html">COMMITTEE</a></li>
+                    <li><a href="#">ALUMNI</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Faculty Profiles</h1>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="faculty-section">
+        <h1>Meet Our Faculty</h1>
+        <p>Our faculty members are dedicated to providing students with the best educational experience, blending expertise and passion for teaching.</p>
+        <div class="faculty-card-container">
+            <!-- Faculty Card 1 -->
+            <div class="faculty-card">
+                <img src="images/faculty1.jpg" alt="Dr. Rajesh Verma">
+                <h3>Dr. Priya Nair</h3>
+                <p>Professor of Computer Science<br> Ph.D. in AI & ML, IIT Bombay</p>
+                <a href="#">View Profile</a>
+            </div>
+            <!-- Faculty Card 2 -->
+            <div class="faculty-card">
+                <img src="images/faculty2.jpg" alt="Dr. Priya Nair">
+                <h3>Dr. Rajesh Verma</h3>
+                <p>Associate Professor, Mathematics<br> M.Sc., Ph.D. - IIM Bangalore</p>
+                <a href="#">View Profile</a>
+            </div>
+            <!-- Faculty Card 3 -->
+            <div class="faculty-card">
+                <img src="images/faculty3.jpg" alt="Dr. Amit Sharma">
+                <h3>Dr. Ritu Singh</h3>
+                <p>Professor of Physics<br> Ph.D. in Quantum Mechanics, IISc Bangalore</p>
+                <a href="#">View Profile</a>
+            </div>
+            <!-- Faculty Card 4 -->
+            <div class="faculty-card">
+                <img src="images/faculty4.jpg" alt="Dr. Ritu Singh">
+                <h3>Dr. Amit Sharma</h3>
+                <p>Professor of Chemistry<br> Ph.D. in Organic Chemistry, Delhi University</p>
+                <a href="#">View Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h2>About Intelvision College</h2>
+        <p>Intelvision College is committed to providing top-notch education, research opportunities, and an environment for academic excellence.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Intelvision College Team</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
